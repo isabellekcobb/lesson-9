@@ -9,12 +9,15 @@ module tape
 }
 
 // Task 1 - Play a load into load 114
-object player
-{
-    parent load_114;
-    file "load_114.csv";
-    property "constant_power_A";
-    loop 7;
+object meter
+    nominal_voltage 2401.7771;
+    object player
+    {
+        parent load_114;
+        file "load_114.csv";
+        property "constant_power_A";
+        loop 7;
+    };
 }
 
 // Task 2 - Record the voltage at load 114
