@@ -10,6 +10,7 @@ module tape
 
 // Task 1 - Play a load into load 114
 object meter
+{
     nominal_voltage 2401.7771;
     object player
     {
